@@ -1,6 +1,6 @@
 {
   "name": "mkdir-p-bluebird",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "a linux like mkdir -p for node.js that uses node’s fs.writeFile() and bluebird promises",
   "author": "dan entous",
   "license": "MIT",
