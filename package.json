@@ -1,7 +1,7 @@
 {
   "name": "mkdir-p-bluebird",
   "version": "1.0.0",
-  "description": "a linux like mkdir -p for node.js that uses node’s fs.writeFile() and bluebird promises",
+  "description": "promise wrapper for a linux like mkdir -p that ignores EEXIST by default",
   "author": "dan entous",
   "license": "MIT",
   "main": "src",

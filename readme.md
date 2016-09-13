@@ -1,7 +1,16 @@
 # mkdir-p-bluebird
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![NSP Status][nsp-image]][nsp-url]
 
-a linux like `mkdir -p` for node.js that uses node’s [`fs.writeFile()`][fs-write-file] and [`bluebird`][bluebird] promises.
+promise wrapper for a linux like mkdir -p that ignores EEXIST by default; uses [mkdir-bluebird][mkdir-bluebird-url] to create the [`fs.mkdir()`][fs-mkdir] promises.
+
+## table of contents
+* [installation](#installation)
+* [usage](#usage)
+    * [mkdirp( pathp[, mode][, ignore] )](#mkdirp-pathp-mode-ignore-)
+    * [default](#default)
+    * [set ignore to false](#set-ignore-to-false)
+    * [using node’s path module](#using-nodes-path-module)
+* [license](#license)
 
 ## installation
 ```javascript
@@ -33,7 +42,7 @@ Promsie.all( mkdirp( 'test-dir/sub/folder' ) )
     function( err ) {
       // handle error
     }
-  )
+  );
 ```
 
 ### set ignore to `false`
@@ -52,7 +61,7 @@ Promise.all( mkdirp( 'test-dir/sub/folder', null, false ) )
     function( err ) {
       // handle error
     }
-  )
+  );
 ```
 
 ### using node’s path module
@@ -72,7 +81,7 @@ Promise.all( mkdirp( dirpath ) )
     function( err ) {
       // handle error
     }
-  )
+  );
 ```
 
 ## license
@@ -81,8 +90,9 @@ Promise.all( mkdirp( dirpath ) )
 [bluebird]: https://www.npmjs.com/package/bluebird
 [coveralls-image]: https://coveralls.io/repos/github/dan-nl/mkdir-bluebird/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/dan-nl/mkdir-bluebird?branch=master
-[fs-write-file]: https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback
+[fs-mkdir]: https://nodejs.org/api/fs.html#fs_fs_mkdir_path_mode_callback
 [mit-license]: https://raw.githubusercontent.com/dan-nl/mkdir-p-bluebird/master/license.txt
+[mkdir-bluebird-url]: https://www.npmjs.com/package/mkdir-bluebird
 [npm-image]: https://img.shields.io/npm/v/mkdir-p-bluebird.svg
 [npm-url]: https://www.npmjs.com/package/mkdir-p-bluebird
 [nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/3c923e3f-b2bd-49c0-8dcd-47a13b2c31cb/badge

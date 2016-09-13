@@ -7,7 +7,7 @@ var mkdir = require( 'mkdir-bluebird' );
 var path = require( 'path' );
 
 /**
- * a linux like `mkdir -p` for node.js that uses node’s `fs.writeFile()` and bluebird promises.
+ * promise wrapper for a linux like mkdir -p that ignores EEXIST by default
  *
  * @param {string|buffer} pathp
  * @param {number} [mode = 0o777]
