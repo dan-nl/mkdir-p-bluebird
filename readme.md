@@ -34,11 +34,19 @@ var Promise = require( 'bluebird' );
 
 Promsie.all( mkdirp( 'test-dir/sub/folder' ) )
   .then(
+    /**
+     * @param {Array} result
+     * an array of booleans; each one representing the result of each mkdir() promise
+     * created by mkdirp(). since we’re in then(), each result should be `true`
+     */
     function( result ) {
       // handle success
     }
   )
   .catch(
+    /**
+     * @param {Error} err
+     */
     function( err ) {
       // handle error
     }
@@ -53,11 +61,19 @@ var Promise = require( 'bluebird' );
 
 Promise.all( mkdirp( 'test-dir/sub/folder', null, false ) )
   .then(
+    /**
+     * @param {Array} result
+     * an array of booleans; each one representing the result of each mkdir() promise
+     * created by mkdirp(). since we’re in then(), each result should be `true`
+     */
     function( result ) {
       // handle success
     }
   )
   .catch(
+    /**
+     * @param {Error} err
+     */
     function( err ) {
       // handle error
     }
@@ -73,11 +89,19 @@ var dirpath = path.join( __dirname, 'test', 'test-dir' );
 
 Promise.all( mkdirp( dirpath ) )
   .then(
+    /**
+     * @param {Array} result
+     * an array of booleans; each one representing the result of each mkdir() promise
+     * created by mkdirp(). since we’re in then(), each result should be `true`
+     */
     function( result ) {
       // handle success
     }
   )
   .catch(
+    /**
+     * @param {Error} err
+     */
     function( err ) {
       // handle error
     }
