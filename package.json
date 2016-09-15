@@ -1,6 +1,6 @@
 {
   "name": "mkdir-p-bluebird",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "promise wrapper for a linux like mkdir -p that ignores EEXIST by default",
   "author": "dan entous",
   "license": "MIT",
