@@ -121,7 +121,7 @@ Promise.all( mkdirp( dirpath ) )
 [mkdir-bluebird-url]: https://www.npmjs.com/package/mkdir-bluebird
 [npm-image]: https://img.shields.io/npm/v/mkdir-p-bluebird.svg
 [npm-url]: https://www.npmjs.com/package/mkdir-p-bluebird
-[nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/3c923e3f-b2bd-49c0-8dcd-47a13b2c31cb/badge
-[nsp-url]: https://nodesecurity.io/orgs/githubdan-nl/projects/3c923e3f-b2bd-49c0-8dcd-47a13b2c31cb
+[nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/6709c674-7c89-4f4a-be1e-84552c43ed81/badge
+[nsp-url]: https://nodesecurity.io/orgs/githubdan-nl/projects/6709c674-7c89-4f4a-be1e-84552c43ed81
 [travis-image]: https://travis-ci.org/dan-nl/mkdir-p-bluebird.svg?branch=master
 [travis-url]: https://travis-ci.org/dan-nl/mkdir-p-bluebird
